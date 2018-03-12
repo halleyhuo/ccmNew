@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="KeyBoardButton" name="keyBoardButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>325</y>
+     <width>113</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Shift</string>
+   </property>
+   <property name="buttonId">
+    <number>512</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_2">
+   <property name="geometry">
+    <rect>
+     <x>77</x>
+     <y>100</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>q</string>
+   </property>
+   <property name="buttonId">
+    <number>81</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_3">
+   <property name="geometry">
+    <rect>
+     <x>143</x>
+     <y>100</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>w</string>
+   </property>
+   <property name="buttonId">
+    <number>87</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_4">
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>100</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>r</string>
+   </property>
+   <property name="buttonId">
+    <number>82</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_5">
+   <property name="geometry">
+    <rect>
+     <x>341</x>
+     <y>100</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>t</string>
+   </property>
+   <property name="buttonId">
+    <number>84</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_6">
+   <property name="geometry">
+    <rect>
+     <x>209</x>
+     <y>100</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>e</string>
+   </property>
+   <property name="buttonId">
+    <number>69</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_7">
+   <property name="geometry">
+    <rect>
+     <x>473</x>
+     <y>100</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>u</string>
+   </property>
+   <property name="buttonId">
+    <number>85</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_8">
+   <property name="geometry">
+    <rect>
+     <x>539</x>
+     <y>100</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>i</string>
+   </property>
+   <property name="buttonId">
+    <number>73</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_9">
+   <property name="geometry">
+    <rect>
+     <x>407</x>
+     <y>100</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>y</string>
+   </property>
+   <property name="buttonId">
+    <number>89</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_10">
+   <property name="geometry">
+    <rect>
+     <x>671</x>
+     <y>100</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>p</string>
+   </property>
+   <property name="buttonId">
+    <number>80</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_11">
+   <property name="geometry">
+    <rect>
+     <x>737</x>
+     <y>100</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;--</string>
+   </property>
+   <property name="buttonId">
+    <number>8</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_12">
+   <property name="geometry">
+    <rect>
+     <x>605</x>
+     <y>100</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>o</string>
+   </property>
+   <property name="buttonId">
+    <number>79</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_13">
+   <property name="geometry">
+    <rect>
+     <x>429</x>
+     <y>175</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>h</string>
+   </property>
+   <property name="buttonId">
+    <number>72</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_14">
+   <property name="geometry">
+    <rect>
+     <x>696</x>
+     <y>175</y>
+     <width>101</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Enter</string>
+   </property>
+   <property name="buttonId">
+    <number>13</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_15">
+   <property name="geometry">
+    <rect>
+     <x>99</x>
+     <y>175</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>a</string>
+   </property>
+   <property name="buttonId">
+    <number>65</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_16">
+   <property name="geometry">
+    <rect>
+     <x>165</x>
+     <y>175</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>s</string>
+   </property>
+   <property name="buttonId">
+    <number>83</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_17">
+   <property name="geometry">
+    <rect>
+     <x>495</x>
+     <y>175</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>j</string>
+   </property>
+   <property name="buttonId">
+    <number>74</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_18">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>250</y>
+     <width>110</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>123/abc</string>
+   </property>
+   <property name="buttonId">
+    <number>513</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_19">
+   <property name="geometry">
+    <rect>
+     <x>297</x>
+     <y>175</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>f</string>
+   </property>
+   <property name="buttonId">
+    <number>70</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_20">
+   <property name="geometry">
+    <rect>
+     <x>363</x>
+     <y>175</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>g</string>
+   </property>
+   <property name="buttonId">
+    <number>71</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_21">
+   <property name="geometry">
+    <rect>
+     <x>561</x>
+     <y>175</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>k</string>
+   </property>
+   <property name="buttonId">
+    <number>75</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_23">
+   <property name="geometry">
+    <rect>
+     <x>627</x>
+     <y>175</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>l</string>
+   </property>
+   <property name="buttonId">
+    <number>76</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_24">
+   <property name="geometry">
+    <rect>
+     <x>231</x>
+     <y>175</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>d</string>
+   </property>
+   <property name="buttonId">
+    <number>68</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_26">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>175</y>
+     <width>93</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Tab</string>
+   </property>
+   <property name="buttonId">
+    <number>9</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_27">
+   <property name="geometry">
+    <rect>
+     <x>247</x>
+     <y>250</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>c</string>
+   </property>
+   <property name="buttonId">
+    <number>67</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_28">
+   <property name="geometry">
+    <rect>
+     <x>511</x>
+     <y>250</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>m</string>
+   </property>
+   <property name="buttonId">
+    <number>77</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_29">
+   <property name="geometry">
+    <rect>
+     <x>115</x>
+     <y>250</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>z</string>
+   </property>
+   <property name="buttonId">
+    <number>90</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_31">
+   <property name="geometry">
+    <rect>
+     <x>445</x>
+     <y>250</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>n</string>
+   </property>
+   <property name="buttonId">
+    <number>78</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_32">
+   <property name="geometry">
+    <rect>
+     <x>181</x>
+     <y>250</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>x</string>
+   </property>
+   <property name="buttonId">
+    <number>88</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_33">
+   <property name="geometry">
+    <rect>
+     <x>313</x>
+     <y>250</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>v</string>
+   </property>
+   <property name="buttonId">
+    <number>86</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_34">
+   <property name="geometry">
+    <rect>
+     <x>379</x>
+     <y>250</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>b</string>
+   </property>
+   <property name="buttonId">
+    <number>66</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_36">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>325</y>
+     <width>451</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Space</string>
+   </property>
+   <property name="buttonId">
+    <number>32</number>
+   </property>
+   <property name="iconNormal">
+    <string/>
+   </property>
+  </widget>
+  <widget class="TrigButton" name="trigButton_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>420</y>
+     <width>100</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt</string>
+   </property>
+   <property name="text">
+    <string>Emergency</string>
+   </property>
+   <property name="buttonId">
+    <number>1322</number>
+   </property>
+  </widget>
+  <widget class="TrigButton" name="trigButton_3">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>420</y>
+     <width>100</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt</string>
+   </property>
+   <property name="text">
+    <string>Examination</string>
+   </property>
+   <property name="buttonId">
+    <number>1320</number>
+   </property>
+  </widget>
+  <widget class="TrigButton" name="trigButton_4">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>420</y>
+     <width>100</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt</string>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+   <property name="buttonId">
+    <number>36281</number>
+   </property>
+  </widget>
+  <widget class="TrigButton" name="trigButton_5">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>420</y>
+     <width>100</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt</string>
+   </property>
+   <property name="text">
+    <string>Generate ID.</string>
+   </property>
+   <property name="buttonId">
+    <number>1394</number>
+   </property>
+  </widget>
+  <widget class="TrigButton" name="trigButton_6">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>420</y>
+     <width>100</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt</string>
+   </property>
+   <property name="text">
+    <string>Add WorkList</string>
+   </property>
+   <property name="buttonId">
+    <number>1321</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_22">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>250</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>↑</string>
+   </property>
+   <property name="buttonId">
+    <number>38</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_25">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>289</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>→</string>
+   </property>
+   <property name="buttonId">
+    <number>39</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_37">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>325</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>↓</string>
+   </property>
+   <property name="buttonId">
+    <number>40</number>
+   </property>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_38">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>289</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>←</string>
+   </property>
+   <property name="buttonId">
+    <number>37</number>
+   </property>
+  </widget>
+  <widget class="GroupBox" name="groupBox_Echo">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>801</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <widget class="KeyBoardButton" name="keyBoardButton_30">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>20</y>
+      <width>71</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&gt;&gt;</string>
+    </property>
+    <property name="buttonId">
+     <number>9</number>
+    </property>
+   </widget>
+   <widget class="StaticLabel" name="staticLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>251</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="iconId">
+     <number>4906</number>
+    </property>
+   </widget>
+   <widget class="KeyBoardButton" name="keyBoardButton_35">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>20</y>
+      <width>71</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;&lt;</string>
+    </property>
+    <property name="buttonId">
+     <number>265</number>
+    </property>
+   </widget>
+   <widget class="StaticLabel" name="staticLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>20</y>
+      <width>321</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-color: rgb(69, 134, 255);border-width:1px;border-style:solid;background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+    <property name="iconId">
+     <number>4905</number>
+    </property>
+   </widget>
+  </widget>
+  <widget class="KeyBoardButton" name="keyBoardButton_39">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>100</y>
+     <width>71</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Help</string>
+   </property>
+   <property name="buttonId">
+    <number>112</number>
+   </property>
+  </widget>
+  <widget class="TrigButton" name="trigButton_7">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>420</y>
+     <width>100</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt</string>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+   <property name="buttonId">
+    <number>1395</number>
+   </property>
+  </widget>
+  <widget class="TrigButton" name="trigButton_8">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>420</y>
+     <width>100</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt</string>
+   </property>
+   <property name="text">
+    <string>Service</string>
+   </property>
+   <property name="buttonId">
+    <number>1398</number>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GroupBox</class>
+   <extends>QGroupBox</extends>
+   <header>groupbox.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>KeyBoardButton</class>
+   <extends>QPushButton</extends>
+   <header>keyboardbutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>StaticLabel</class>
+   <extends>QLabel</extends>
+   <header>staticlabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>TrigButton</class>
+   <extends>QPushButton</extends>
+   <header>trigbutton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

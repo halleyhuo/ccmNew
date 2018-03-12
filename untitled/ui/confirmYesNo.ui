@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="StaticLabel" name="confirmMsg_YesNo">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>80</y>
+     <width>661</width>
+     <height>58</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>You want to exit the examination,</string>
+   </property>
+  </widget>
+  <widget class="StaticLabel" name="informationLabel">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>120</y>
+     <width>661</width>
+     <height>58</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Are you sure?</string>
+   </property>
+  </widget>
+  <widget class="TrigButton" name="confirmButton_Yes">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>200</y>
+     <width>101</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Yes</string>
+   </property>
+   <property name="buttonId">
+    <number>0</number>
+   </property>
+   <property name="iconNormal">
+    <string>../icon/subIcon/information.png</string>
+   </property>
+  </widget>
+  <widget class="TrigButton" name="confirmButton_No">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>200</y>
+     <width>101</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>No</string>
+   </property>
+   <property name="buttonId">
+    <number>0</number>
+   </property>
+   <property name="iconNormal">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>StaticLabel</class>
+   <extends>QLabel</extends>
+   <header>staticlabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>TrigButton</class>
+   <extends>QPushButton</extends>
+   <header>trigbutton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

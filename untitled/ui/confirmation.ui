@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="StaticLabel" name="staticLabel">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>80</y>
+     <width>661</width>
+     <height>58</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Please check the information</string>
+   </property>
+  </widget>
+  <widget class="StaticLabel" name="informationLabel">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>120</y>
+     <width>661</width>
+     <height>58</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string> on the imaging system monitor!</string>
+   </property>
+  </widget>
+  <widget class="TrigButton" name="confirmButton">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>200</y>
+     <width>131</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>I Know That!</string>
+   </property>
+   <property name="buttonId">
+    <number>0</number>
+   </property>
+   <property name="iconNormal">
+    <string>../icon/subIcon/information.png</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>StaticLabel</class>
+   <extends>QLabel</extends>
+   <header>staticlabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>TrigButton</class>
+   <extends>QPushButton</extends>
+   <header>trigbutton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

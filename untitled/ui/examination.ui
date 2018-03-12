@@ -1,0 +1,2131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog:{background:rgb(203,203,203);}</string>
+  </property>
+  <widget class="TrigButton" name="trigButton_RotLeft">
+   <property name="geometry">
+    <rect>
+     <x>548</x>
+     <y>0</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="buttonId">
+    <number>1575</number>
+   </property>
+   <property name="continuousMode" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="iconNormal">
+    <string>../icon/test/RotateLeft.png</string>
+   </property>
+  </widget>
+  <widget class="TrigButton" name="trigButton_RotRight">
+   <property name="geometry">
+    <rect>
+     <x>611</x>
+     <y>0</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="buttonId">
+    <number>1574</number>
+   </property>
+   <property name="continuousMode" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="iconNormal">
+    <string>../icon/test/RotateRight.png</string>
+   </property>
+  </widget>
+  <widget class="TrigButton" name="trigButton_LargePre">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>460</y>
+     <width>60</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Large Preview</string>
+   </property>
+   <property name="buttonId">
+    <number>3701</number>
+   </property>
+   <property name="continuousMode" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="iconNormal">
+    <string/>
+   </property>
+  </widget>
+  <widget class="TrigButton" name="trigButton_smallPre">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>420</y>
+     <width>60</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Small Preview</string>
+   </property>
+   <property name="buttonId">
+    <number>36491</number>
+   </property>
+   <property name="continuousMode" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="iconNormal">
+    <string/>
+   </property>
+  </widget>
+  <widget class="TabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>221</x>
+     <y>-53</y>
+     <width>326</width>
+     <height>481</height>
+    </rect>
+   </property>
+   <property name="tabPosition">
+    <enum>QTabWidget::North</enum>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab_prep">
+    <attribute name="title">
+     <string>Preparation</string>
+    </attribute>
+    <widget class="IndexButton" name="indexButton_Mag">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>71</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>1002</number>
+     </property>
+     <property name="textType">
+      <string>Mag</string>
+     </property>
+    </widget>
+    <widget class="IndexButton" name="indexButton_Dose">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>30</y>
+       <width>71</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>1053</number>
+     </property>
+     <property name="textType">
+      <string>Dose</string>
+     </property>
+    </widget>
+    <widget class="IndexButton" name="indexButton_Pulse">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>30</y>
+       <width>71</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>1004</number>
+     </property>
+     <property name="iconId">
+      <number>4241</number>
+     </property>
+     <property name="textType">
+      <string>Pulse Rate</string>
+     </property>
+    </widget>
+    <widget class="IndexButton" name="indexButton_Tech">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>120</y>
+       <width>71</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>1006</number>
+     </property>
+     <property name="textType">
+      <string>Tech Lock</string>
+     </property>
+    </widget>
+    <widget class="SwitchButton" name="switchButton_Laser">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>210</y>
+       <width>71</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>2001</number>
+     </property>
+     <property name="iconOn">
+      <string>../icon/test/LaserOn.png</string>
+     </property>
+     <property name="iconOff">
+      <string>../icon/test/Laser.png</string>
+     </property>
+    </widget>
+    <widget class="IndexButton" name="indexButton_Tech_2">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>120</y>
+       <width>71</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>1021</number>
+     </property>
+     <property name="textType">
+      <string> Edge Enhan.</string>
+     </property>
+    </widget>
+    <widget class="IndexButton" name="indexButton_Tech_3">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>120</y>
+       <width>71</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>1003</number>
+     </property>
+     <property name="textType">
+      <string>Motion</string>
+     </property>
+    </widget>
+    <zorder>indexButton_Mag</zorder>
+    <zorder>indexButton_Dose</zorder>
+    <zorder>indexButton_Pulse</zorder>
+    <zorder>indexButton_Tech</zorder>
+    <zorder>switchButton_Laser</zorder>
+    <zorder>indexButton_Tech_2</zorder>
+    <zorder>indexButton_Tech_3</zorder>
+    <zorder>tabWidget_Left</zorder>
+   </widget>
+   <widget class="QWidget" name="tab_exam">
+    <attribute name="title">
+     <string>Processing</string>
+    </attribute>
+    <widget class="StaticLabel" name="previewImage">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>60</y>
+       <width>320</width>
+       <height>320</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="iconNormal">
+      <string>../icon/test/sysPic.bmp</string>
+     </property>
+    </widget>
+    <widget class="StaticLabel" name="previewAngleLabel">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>51</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>angle:</string>
+     </property>
+     <property name="iconId">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="StaticLabel" name="previewAngleValue">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>20</y>
+       <width>51</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="iconId">
+      <number>4311</number>
+     </property>
+    </widget>
+    <widget class="StaticLabel" name="previewStatus">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>400</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ImgState</string>
+     </property>
+     <property name="iconId">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="StaticLabel" name="previewFlipStatus">
+     <property name="geometry">
+      <rect>
+       <x>149</x>
+       <y>20</y>
+       <width>171</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>not flipped</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="iconId">
+      <number>4312</number>
+     </property>
+    </widget>
+    <widget class="StaticLabel" name="previewSeriesNum">
+     <property name="geometry">
+      <rect>
+       <x>78</x>
+       <y>380</y>
+       <width>41</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="iconId">
+      <number>4207</number>
+     </property>
+    </widget>
+    <widget class="StaticLabel" name="previewImageNum">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>380</y>
+       <width>40</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="iconId">
+      <number>4208</number>
+     </property>
+    </widget>
+    <widget class="StaticLabel" name="previewSeriesLabel">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>380</y>
+       <width>71</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Series:#</string>
+     </property>
+     <property name="iconId">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="StaticLabel" name="previewImageLabel">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>380</y>
+       <width>71</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Image:#</string>
+     </property>
+     <property name="iconId">
+      <number>0</number>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="HorSlider" name="horSliderBrightness">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>230</y>
+     <width>251</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="buttonId">
+    <number>3101</number>
+   </property>
+   <property name="iconId">
+    <number>3001</number>
+   </property>
+   <property name="maxValue">
+    <number>4096</number>
+   </property>
+   <property name="iconName">
+    <string>../icon/test/brightness.png</string>
+   </property>
+  </widget>
+  <widget class="HorSlider" name="horSliderContrast">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>290</y>
+     <width>251</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="buttonId">
+    <number>3102</number>
+   </property>
+   <property name="iconId">
+    <number>3002</number>
+   </property>
+   <property name="maxValue">
+    <number>4096</number>
+   </property>
+   <property name="iconName">
+    <string>../icon/test/contrast.png</string>
+   </property>
+  </widget>
+  <widget class="GroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>425</y>
+     <width>328</width>
+     <height>55</height>
+    </rect>
+   </property>
+   <widget class="RadioButton" name="radioButton_TAB1">
+    <property name="geometry">
+     <rect>
+      <x>2</x>
+      <y>1</y>
+      <width>160</width>
+      <height>55</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Prepration</string>
+    </property>
+    <property name="buttonId">
+     <number>30</number>
+    </property>
+   </widget>
+   <widget class="RadioButton" name="radioButton_TAB2">
+    <property name="geometry">
+     <rect>
+      <x>166</x>
+      <y>1</y>
+      <width>160</width>
+      <height>55</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Examination</string>
+    </property>
+    <property name="buttonId">
+     <number>31</number>
+    </property>
+   </widget>
+  </widget>
+  <widget class="TrigButton" name="trigButton_RotReset">
+   <property name="geometry">
+    <rect>
+     <x>548</x>
+     <y>60</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="buttonId">
+    <number>1434</number>
+   </property>
+   <property name="continuousMode" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="iconNormal">
+    <string>../icon/test/RotateReset.png</string>
+   </property>
+  </widget>
+  <widget class="SwitchButton" name="switchButton_flipVer">
+   <property name="geometry">
+    <rect>
+     <x>674</x>
+     <y>0</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="buttonId">
+    <number>2003</number>
+   </property>
+   <property name="iconOn">
+    <string>../icon/flipVerticalOn.png</string>
+   </property>
+   <property name="iconOff">
+    <string>../icon/flipVerticalOff.png</string>
+   </property>
+  </widget>
+  <widget class="SwitchButton" name="switchButton_flipHor">
+   <property name="geometry">
+    <rect>
+     <x>737</x>
+     <y>0</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="buttonId">
+    <number>2004</number>
+   </property>
+   <property name="iconOn">
+    <string>../icon/flipHorizOn.png</string>
+   </property>
+   <property name="iconOff">
+    <string>../icon/flipHorizOff.png</string>
+   </property>
+  </widget>
+  <widget class="TabWidget" name="tabWidget_Left">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>221</width>
+     <height>533</height>
+    </rect>
+   </property>
+   <property name="tabPosition">
+    <enum>QTabWidget::South</enum>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab_prep_left">
+    <attribute name="title">
+     <string>Preparation</string>
+    </attribute>
+    <widget class="TrigButton" name="trigButton_kvMinus">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>7</y>
+       <width>65</width>
+       <height>65</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{font: 36pt;} QPushButton:enabled{color:white; background:rgb(150,150,200);}QPushButton:!enabled{color:transparent; background:transparent;}</string>
+     </property>
+     <property name="text">
+      <string>-</string>
+     </property>
+     <property name="buttonId">
+      <number>1591</number>
+     </property>
+     <property name="continuousMode" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="iconNormal">
+      <string/>
+     </property>
+    </widget>
+    <widget class="TrigButton" name="trigButton_LeavesOut_2">
+     <property name="geometry">
+      <rect>
+       <x>147</x>
+       <y>400</y>
+       <width>70</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="buttonId">
+      <number>1503</number>
+     </property>
+     <property name="continuousMode" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="iconNormal">
+      <string>../icon/test/ColRotateRight.png</string>
+     </property>
+    </widget>
+    <widget class="SwitchButton" name="switchButton_XrayOff">
+     <property name="geometry">
+      <rect>
+       <x>147</x>
+       <y>245</y>
+       <width>71</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="buttonId">
+      <number>2047</number>
+     </property>
+     <property name="iconOn">
+      <string>../icon/xrayblock_off.png</string>
+     </property>
+     <property name="iconOff">
+      <string>../icon/xrayblock_on.png</string>
+     </property>
+    </widget>
+    <widget class="RadioButton" name="radioButton_Fluo">
+     <property name="geometry">
+      <rect>
+       <x>124</x>
+       <y>85</y>
+       <width>71</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>2062</number>
+     </property>
+     <property name="iconOn">
+      <string>../icon/test/FluoroOn.png</string>
+     </property>
+     <property name="iconOff">
+      <string>../icon/test/Fluoro.png</string>
+     </property>
+    </widget>
+    <widget class="TrigButton" name="trigButton_LeavesIn">
+     <property name="geometry">
+      <rect>
+       <x>74</x>
+       <y>325</y>
+       <width>70</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="buttonId">
+      <number>1850</number>
+     </property>
+     <property name="continuousMode" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="iconNormal">
+      <string>../icon/test/LeavesIn.png</string>
+     </property>
+    </widget>
+    <widget class="RadioButton" name="radioButton_Road">
+     <property name="geometry">
+      <rect>
+       <x>124</x>
+       <y>165</y>
+       <width>71</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>2145</number>
+     </property>
+     <property name="iconOn">
+      <string>../icon/test/RoadOn.png</string>
+     </property>
+     <property name="iconOff">
+      <string>../icon/test/Road.png</string>
+     </property>
+    </widget>
+    <widget class="TrigButton" name="trigButton_ResetBuzzer">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>245</y>
+       <width>71</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>1201</number>
+     </property>
+     <property name="continuousMode" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="iconNormal">
+      <string>../icon/test/ResetTimer.png</string>
+     </property>
+    </widget>
+    <widget class="StaticLabel" name="maValue">
+     <property name="geometry">
+      <rect>
+       <x>71</x>
+       <y>40</y>
+       <width>41</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>000</string>
+     </property>
+     <property name="iconId">
+      <number>4204</number>
+     </property>
+    </widget>
+    <widget class="TrigButton" name="trigButton_Out">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>400</y>
+       <width>70</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="buttonId">
+      <number>1508</number>
+     </property>
+     <property name="continuousMode" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="iconNormal">
+      <string>../icon/test/Out.png</string>
+     </property>
+    </widget>
+    <widget class="RadioButton" name="radioButton_Sub">
+     <property name="geometry">
+      <rect>
+       <x>24</x>
+       <y>165</y>
+       <width>71</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>2064</number>
+     </property>
+     <property name="iconOn">
+      <string>../icon/test/SubOn.png</string>
+     </property>
+     <property name="iconOff">
+      <string>../icon/test/Sub.png</string>
+     </property>
+    </widget>
+    <widget class="StaticLabel" name="maUnit">
+     <property name="geometry">
+      <rect>
+       <x>115</x>
+       <y>40</y>
+       <width>31</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>mA</string>
+     </property>
+     <property name="iconId">
+      <number>4240</number>
+     </property>
+    </widget>
+    <widget class="TrigButton" name="trigButton_LeavesOut">
+     <property name="geometry">
+      <rect>
+       <x>74</x>
+       <y>400</y>
+       <width>70</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="buttonId">
+      <number>1851</number>
+     </property>
+     <property name="continuousMode" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="iconNormal">
+      <string>../icon/test/LeavesOut.png</string>
+     </property>
+    </widget>
+    <widget class="StaticLabel" name="kvValue">
+     <property name="geometry">
+      <rect>
+       <x>71</x>
+       <y>13</y>
+       <width>41</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>000</string>
+     </property>
+     <property name="iconId">
+      <number>4203</number>
+     </property>
+    </widget>
+    <widget class="TrigButton" name="trigButton_LeavesIn_2">
+     <property name="geometry">
+      <rect>
+       <x>147</x>
+       <y>325</y>
+       <width>70</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="buttonId">
+      <number>1506</number>
+     </property>
+     <property name="continuousMode" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="iconNormal">
+      <string>../icon/test/ColRotateLeft.png</string>
+     </property>
+    </widget>
+    <widget class="TrigButton" name="trigButton_In">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>325</y>
+       <width>70</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="buttonId">
+      <number>1507</number>
+     </property>
+     <property name="continuousMode" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="iconNormal">
+      <string>../icon/test/In.png</string>
+     </property>
+    </widget>
+    <widget class="TrigButton" name="trigButton_kvPlus">
+     <property name="geometry">
+      <rect>
+       <x>146</x>
+       <y>7</y>
+       <width>65</width>
+       <height>65</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{font: 36pt;} QPushButton:enabled{color:white; background:rgb(150,150,200);}QPushButton:!enabled{color:transparent; background:transparent;}</string>
+     </property>
+     <property name="text">
+      <string>+</string>
+     </property>
+     <property name="buttonId">
+      <number>1592</number>
+     </property>
+     <property name="continuousMode" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="iconNormal">
+      <string/>
+     </property>
+    </widget>
+    <widget class="StaticLabel" name="kvUnit">
+     <property name="geometry">
+      <rect>
+       <x>115</x>
+       <y>13</y>
+       <width>31</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>kV</string>
+     </property>
+     <property name="iconId">
+      <number>4238</number>
+     </property>
+    </widget>
+    <widget class="RadioButton" name="radioButton_DR">
+     <property name="geometry">
+      <rect>
+       <x>24</x>
+       <y>85</y>
+       <width>71</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>2063</number>
+     </property>
+     <property name="iconOn">
+      <string>../icon/test/SingleImageOn.png</string>
+     </property>
+     <property name="iconOff">
+      <string>../icon/test/SingleImage.png</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_proc_left">
+    <attribute name="title">
+     <string>Processing</string>
+    </attribute>
+    <widget class="StaticLabel" name="staticLabel">
+     <property name="geometry">
+      <rect>
+       <x>4</x>
+       <y>10</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent; color:black;</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="iconId">
+      <number>4284</number>
+     </property>
+    </widget>
+    <widget class="StaticLabel" name="staticLabel_2">
+     <property name="geometry">
+      <rect>
+       <x>57</x>
+       <y>10</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent; color:black;</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="iconId">
+      <number>4285</number>
+     </property>
+    </widget>
+    <widget class="StaticLabel" name="staticLabel_3">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>10</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent; color:black;</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="iconId">
+      <number>4286</number>
+     </property>
+    </widget>
+    <widget class="StaticLabel" name="staticLabel_4">
+     <property name="geometry">
+      <rect>
+       <x>162</x>
+       <y>10</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent; color:black;</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="iconId">
+      <number>4287</number>
+     </property>
+    </widget>
+    <widget class="StaticLabel" name="staticLabel_5">
+     <property name="geometry">
+      <rect>
+       <x>162</x>
+       <y>80</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent; color:black;</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="iconId">
+      <number>4291</number>
+     </property>
+    </widget>
+    <widget class="StaticLabel" name="staticLabel_6">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>80</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent; color:black;</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="iconId">
+      <number>4290</number>
+     </property>
+    </widget>
+    <widget class="StaticLabel" name="staticLabel_7">
+     <property name="geometry">
+      <rect>
+       <x>4</x>
+       <y>80</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent; color:black;</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="iconId">
+      <number>4288</number>
+     </property>
+    </widget>
+    <widget class="StaticLabel" name="staticLabel_8">
+     <property name="geometry">
+      <rect>
+       <x>57</x>
+       <y>80</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent; color:black;</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="iconId">
+      <number>4289</number>
+     </property>
+    </widget>
+    <widget class="StaticLabel" name="staticLabel_9">
+     <property name="geometry">
+      <rect>
+       <x>162</x>
+       <y>150</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent; color:black;</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="iconId">
+      <number>4295</number>
+     </property>
+    </widget>
+    <widget class="StaticLabel" name="staticLabel_10">
+     <property name="geometry">
+      <rect>
+       <x>4</x>
+       <y>220</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent; color:black;</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="iconId">
+      <number>4296</number>
+     </property>
+    </widget>
+    <widget class="StaticLabel" name="staticLabel_11">
+     <property name="geometry">
+      <rect>
+       <x>162</x>
+       <y>220</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent; color:black;</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="iconId">
+      <number>4299</number>
+     </property>
+    </widget>
+    <widget class="StaticLabel" name="staticLabel_12">
+     <property name="geometry">
+      <rect>
+       <x>57</x>
+       <y>220</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent; color:black;</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="iconId">
+      <number>4297</number>
+     </property>
+    </widget>
+    <widget class="StaticLabel" name="staticLabel_13">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>150</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent; color:black;</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="iconId">
+      <number>4294</number>
+     </property>
+    </widget>
+    <widget class="StaticLabel" name="staticLabel_14">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>220</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent; color:black;</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="iconId">
+      <number>4298</number>
+     </property>
+    </widget>
+    <widget class="StaticLabel" name="staticLabel_15">
+     <property name="geometry">
+      <rect>
+       <x>4</x>
+       <y>150</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent; color:black;</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="iconId">
+      <number>4292</number>
+     </property>
+    </widget>
+    <widget class="StaticLabel" name="staticLabel_16">
+     <property name="geometry">
+      <rect>
+       <x>57</x>
+       <y>150</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent; color:black;</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="iconId">
+      <number>4293</number>
+     </property>
+    </widget>
+    <widget class="TrigButton" name="trigButton">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>280</y>
+       <width>63</width>
+       <height>63</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:checked{border: 3px solid blue;background-color:#dfdfdf;color:rgb(0,0,0);} \
+QPushButton:!checked{background:transparent;}&quot;);</string>
+     </property>
+     <property name="buttonId">
+      <number>1607</number>
+     </property>
+     <property name="continuousMode" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="iconNormal">
+      <string>../icon/test/upBtn.png</string>
+     </property>
+    </widget>
+    <widget class="TrigButton" name="trigButton_2">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>345</y>
+       <width>63</width>
+       <height>63</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>1608</number>
+     </property>
+     <property name="continuousMode" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="iconNormal">
+      <string>../icon/test/downBtn.png</string>
+     </property>
+    </widget>
+    <widget class="TrigButton" name="trigButton_RotRight_2">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>345</y>
+       <width>63</width>
+       <height>63</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>1606</number>
+     </property>
+     <property name="continuousMode" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="iconNormal">
+      <string>../icon/serialInc.png</string>
+     </property>
+    </widget>
+    <widget class="TrigButton" name="trigButton_RotLeft_2">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>280</y>
+       <width>63</width>
+       <height>63</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>1605</number>
+     </property>
+     <property name="continuousMode" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="iconNormal">
+      <string>../icon/serialDec.png</string>
+     </property>
+    </widget>
+    <widget class="SwitchButton" name="switchButton">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>412</y>
+       <width>71</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>BLOWUP</string>
+     </property>
+     <property name="buttonId">
+      <number>2149</number>
+     </property>
+    </widget>
+    <widget class="SwitchButton" name="switchButton_2">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>410</y>
+       <width>63</width>
+       <height>63</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="buttonId">
+      <number>2002</number>
+     </property>
+     <property name="iconOn">
+      <string>../icon/loopStartOn.png</string>
+     </property>
+     <property name="iconOff">
+      <string>../icon/loopStartOff.png</string>
+     </property>
+    </widget>
+    <widget class="SwitchButton" name="switchButton_6">
+     <property name="geometry">
+      <rect>
+       <x>151</x>
+       <y>345</y>
+       <width>63</width>
+       <height>63</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="buttonId">
+      <number>2199</number>
+     </property>
+     <property name="iconOn">
+      <string>../icon/test/StripeOn.png</string>
+     </property>
+     <property name="iconOff">
+      <string>../icon/test/Stripe.png</string>
+     </property>
+    </widget>
+    <widget class="SwitchButton" name="switchButton_5">
+     <property name="geometry">
+      <rect>
+       <x>153</x>
+       <y>280</y>
+       <width>63</width>
+       <height>63</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="buttonId">
+      <number>2198</number>
+     </property>
+     <property name="iconOn">
+      <string>../icon/test/StackOn.png</string>
+     </property>
+     <property name="iconOff">
+      <string>../icon/test/Stack.png</string>
+     </property>
+    </widget>
+    <widget class="RadioButton" name="radioButton_13">
+     <property name="geometry">
+      <rect>
+       <x>109</x>
+       <y>210</y>
+       <width>54</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:checked{border: 3px solid blue;background:transparent;} QPushButton:!checked{border: 2px solid white;background:transparent;}</string>
+     </property>
+     <property name="buttonId">
+      <number>2040</number>
+     </property>
+    </widget>
+    <widget class="RadioButton" name="radioButton_12">
+     <property name="geometry">
+      <rect>
+       <x>55</x>
+       <y>140</y>
+       <width>54</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:checked{border: 3px solid blue;background:transparent;} QPushButton:!checked{border: 2px solid white;background:transparent;}</string>
+     </property>
+     <property name="buttonId">
+      <number>2035</number>
+     </property>
+    </widget>
+    <widget class="RadioButton" name="radioButton_6">
+     <property name="geometry">
+      <rect>
+       <x>55</x>
+       <y>70</y>
+       <width>54</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:checked{border: 3px solid blue;background:transparent;} QPushButton:!checked{border: 2px solid white;background:transparent;}</string>
+     </property>
+     <property name="buttonId">
+      <number>2031</number>
+     </property>
+    </widget>
+    <widget class="RadioButton" name="radioButton_9">
+     <property name="geometry">
+      <rect>
+       <x>163</x>
+       <y>210</y>
+       <width>54</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:checked{border: 3px solid blue;background:transparent;} QPushButton:!checked{border: 2px solid white;background:transparent;}</string>
+     </property>
+     <property name="buttonId">
+      <number>2041</number>
+     </property>
+    </widget>
+    <widget class="RadioButton" name="radioButton_4">
+     <property name="geometry">
+      <rect>
+       <x>109</x>
+       <y>0</y>
+       <width>54</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:checked{border: 3px solid blue;background:transparent;} QPushButton:!checked{border: 2px solid white;background:transparent;}</string>
+     </property>
+     <property name="buttonId">
+      <number>2028</number>
+     </property>
+    </widget>
+    <widget class="RadioButton" name="radioButton_10">
+     <property name="geometry">
+      <rect>
+       <x>55</x>
+       <y>210</y>
+       <width>54</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:checked{border: 3px solid blue;background:transparent;} QPushButton:!checked{border: 2px solid white;background:transparent;}</string>
+     </property>
+     <property name="buttonId">
+      <number>2039</number>
+     </property>
+    </widget>
+    <widget class="RadioButton" name="radioButton_5">
+     <property name="geometry">
+      <rect>
+       <x>163</x>
+       <y>70</y>
+       <width>54</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:checked{border: 3px solid blue;background:transparent;} QPushButton:!checked{border: 2px solid white;background:transparent;}</string>
+     </property>
+     <property name="buttonId">
+      <number>2033</number>
+     </property>
+    </widget>
+    <widget class="RadioButton" name="radioButton">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>0</y>
+       <width>54</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:checked{border: 3px solid blue;background:transparent;} QPushButton:!checked{border: 2px solid white;background:transparent;}</string>
+     </property>
+     <property name="buttonId">
+      <number>2026</number>
+     </property>
+    </widget>
+    <widget class="RadioButton" name="radioButton_14">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>140</y>
+       <width>54</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:checked{border: 3px solid blue;background:transparent;} QPushButton:!checked{border: 2px solid white;background:transparent;}</string>
+     </property>
+     <property name="buttonId">
+      <number>2034</number>
+     </property>
+    </widget>
+    <widget class="RadioButton" name="radioButton_3">
+     <property name="geometry">
+      <rect>
+       <x>163</x>
+       <y>0</y>
+       <width>54</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:checked{border: 3px solid blue;background:transparent;} QPushButton:!checked{border: 2px solid white;background:transparent;}</string>
+     </property>
+     <property name="buttonId">
+      <number>2029</number>
+     </property>
+    </widget>
+    <widget class="RadioButton" name="radioButton_7">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>70</y>
+       <width>54</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:checked{border: 3px solid blue;background:transparent;} QPushButton:!checked{border: 2px solid white;background:transparent;}</string>
+     </property>
+     <property name="buttonId">
+      <number>2030</number>
+     </property>
+    </widget>
+    <widget class="RadioButton" name="radioButton_15">
+     <property name="geometry">
+      <rect>
+       <x>109</x>
+       <y>140</y>
+       <width>54</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:checked{border: 3px solid blue;background:transparent;} QPushButton:!checked{border: 2px solid white;background:transparent;}</string>
+     </property>
+     <property name="buttonId">
+      <number>2036</number>
+     </property>
+    </widget>
+    <widget class="RadioButton" name="radioButton_16">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>210</y>
+       <width>54</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:checked{border: 3px solid blue;background:transparent;} QPushButton:!checked{border: 2px solid white;background:transparent;}</string>
+     </property>
+     <property name="buttonId">
+      <number>2038</number>
+     </property>
+    </widget>
+    <widget class="RadioButton" name="radioButton_2">
+     <property name="geometry">
+      <rect>
+       <x>55</x>
+       <y>0</y>
+       <width>54</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:checked{border: 3px solid blue;background:transparent;} QPushButton:!checked{border: 2px solid white;background:transparent;}</string>
+     </property>
+     <property name="buttonId">
+      <number>2027</number>
+     </property>
+    </widget>
+    <widget class="RadioButton" name="radioButton_8">
+     <property name="geometry">
+      <rect>
+       <x>109</x>
+       <y>70</y>
+       <width>54</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:checked{border: 3px solid blue;background:transparent;} QPushButton:!checked{border: 2px solid white;background:transparent;}</string>
+     </property>
+     <property name="buttonId">
+      <number>2032</number>
+     </property>
+    </widget>
+    <widget class="RadioButton" name="radioButton_11">
+     <property name="geometry">
+      <rect>
+       <x>163</x>
+       <y>140</y>
+       <width>54</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:checked{border: 3px solid blue;background:transparent;} QPushButton:!checked{border: 2px solid white;background:transparent;}</string>
+     </property>
+     <property name="buttonId">
+      <number>2037</number>
+     </property>
+    </widget>
+    <widget class="IndexButton" name="indexButton_Tech_4">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>410</y>
+       <width>61</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>1080</number>
+     </property>
+     <property name="textType">
+      <string>Sub/Native</string>
+     </property>
+    </widget>
+    <zorder>staticLabel_10</zorder>
+    <zorder>staticLabel_12</zorder>
+    <zorder>staticLabel_11</zorder>
+    <zorder>staticLabel_14</zorder>
+    <zorder>staticLabel_9</zorder>
+    <zorder>staticLabel_16</zorder>
+    <zorder>staticLabel_6</zorder>
+    <zorder>staticLabel_13</zorder>
+    <zorder>staticLabel_8</zorder>
+    <zorder>staticLabel_5</zorder>
+    <zorder>staticLabel_7</zorder>
+    <zorder>staticLabel_15</zorder>
+    <zorder>staticLabel_4</zorder>
+    <zorder>staticLabel_3</zorder>
+    <zorder>staticLabel_2</zorder>
+    <zorder>staticLabel</zorder>
+    <zorder>trigButton</zorder>
+    <zorder>trigButton_2</zorder>
+    <zorder>trigButton_RotRight_2</zorder>
+    <zorder>trigButton_RotLeft_2</zorder>
+    <zorder>switchButton</zorder>
+    <zorder>switchButton_2</zorder>
+    <zorder>switchButton_6</zorder>
+    <zorder>switchButton_5</zorder>
+    <zorder>radioButton_13</zorder>
+    <zorder>radioButton_12</zorder>
+    <zorder>radioButton_6</zorder>
+    <zorder>radioButton_9</zorder>
+    <zorder>radioButton_4</zorder>
+    <zorder>radioButton_10</zorder>
+    <zorder>radioButton_5</zorder>
+    <zorder>radioButton</zorder>
+    <zorder>radioButton_14</zorder>
+    <zorder>radioButton_3</zorder>
+    <zorder>radioButton_7</zorder>
+    <zorder>radioButton_15</zorder>
+    <zorder>radioButton_16</zorder>
+    <zorder>radioButton_2</zorder>
+    <zorder>radioButton_8</zorder>
+    <zorder>radioButton_11</zorder>
+    <zorder>indexButton_Tech_4</zorder>
+   </widget>
+  </widget>
+  <widget class="TrigButton" name="trigButton_endExam">
+   <property name="geometry">
+    <rect>
+     <x>737</x>
+     <y>420</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="buttonId">
+    <number>1027</number>
+   </property>
+   <property name="iconNormal">
+    <string>../icon/test/Close.png</string>
+   </property>
+   <property name="iconHover">
+    <string/>
+   </property>
+   <property name="iconPress">
+    <string/>
+   </property>
+  </widget>
+  <widget class="TrigButton" name="trigButton_3">
+   <property name="geometry">
+    <rect>
+     <x>674</x>
+     <y>358</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="buttonId">
+    <number>1319</number>
+   </property>
+   <property name="iconNormal">
+    <string>../icon/test/StoreCine.png</string>
+   </property>
+  </widget>
+  <widget class="TrigButton" name="trigButton_5">
+   <property name="geometry">
+    <rect>
+     <x>674</x>
+     <y>420</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="buttonId">
+    <number>1221</number>
+   </property>
+   <property name="iconNormal">
+    <string>../icon/test/Export.png</string>
+   </property>
+  </widget>
+  <widget class="SwitchButton" name="switchButton_3">
+   <property name="geometry">
+    <rect>
+     <x>548</x>
+     <y>358</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="buttonId">
+    <number>2051</number>
+   </property>
+   <property name="iconOn">
+    <string>../icon/test/RefOn.png</string>
+   </property>
+   <property name="iconOff">
+    <string>../icon/test/Ref.png</string>
+   </property>
+  </widget>
+  <widget class="TrigButton" name="trigButton_4">
+   <property name="geometry">
+    <rect>
+     <x>737</x>
+     <y>358</y>
+     <width>63</width>
+     <height>63</height>
+    </rect>
+   </property>
+   <property name="buttonId">
+    <number>1215</number>
+   </property>
+   <property name="iconNormal">
+    <string>../icon/test/Transfer.png</string>
+   </property>
+  </widget>
+  <widget class="SwitchButton" name="switchButton_4">
+   <property name="geometry">
+    <rect>
+     <x>548</x>
+     <y>420</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="buttonId">
+    <number>1018</number>
+   </property>
+   <property name="iconOn">
+    <string>../icon/test/OverviewOn.png</string>
+   </property>
+   <property name="iconOff">
+    <string>../icon/test/Overview.png</string>
+   </property>
+  </widget>
+  <widget class="HorSlider" name="horSliderContrast_2">
+   <property name="geometry">
+    <rect>
+     <x>608</x>
+     <y>68</y>
+     <width>191</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="buttonId">
+    <number>3104</number>
+   </property>
+   <property name="iconId">
+    <number>3004</number>
+   </property>
+   <property name="maxValue">
+    <number>256</number>
+   </property>
+   <property name="iconName">
+    <string>../icon/test/zoom.png</string>
+   </property>
+  </widget>
+  <widget class="TrigButton" name="trigButton_RotLeft_3">
+   <property name="geometry">
+    <rect>
+     <x>609</x>
+     <y>124</y>
+     <width>50</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="buttonId">
+    <number>1509</number>
+   </property>
+   <property name="continuousMode" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="iconNormal">
+    <string>../icon/test/upBtn.png</string>
+   </property>
+  </widget>
+  <widget class="TrigButton" name="trigButton_RotLeft_4">
+   <property name="geometry">
+    <rect>
+     <x>609</x>
+     <y>174</y>
+     <width>50</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="buttonId">
+    <number>1510</number>
+   </property>
+   <property name="continuousMode" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="iconNormal">
+    <string>../icon/test/downBtn.png</string>
+   </property>
+  </widget>
+  <widget class="TrigButton" name="trigButton_RotLeft_5">
+   <property name="geometry">
+    <rect>
+     <x>557</x>
+     <y>154</y>
+     <width>50</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="buttonId">
+    <number>1511</number>
+   </property>
+   <property name="continuousMode" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="iconNormal">
+    <string>../icon/test/leftBtn.png</string>
+   </property>
+  </widget>
+  <widget class="TrigButton" name="trigButton_RotLeft_6">
+   <property name="geometry">
+    <rect>
+     <x>661</x>
+     <y>154</y>
+     <width>50</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="buttonId">
+    <number>1512</number>
+   </property>
+   <property name="continuousMode" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="iconNormal">
+    <string>../icon/test/rightBtn.png</string>
+   </property>
+  </widget>
+  <widget class="IndexButton" name="indexButton_Mag_2">
+   <property name="geometry">
+    <rect>
+     <x>737</x>
+     <y>150</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="buttonId">
+    <number>2099</number>
+   </property>
+   <property name="textType">
+    <string>LUT</string>
+   </property>
+  </widget>
+  <widget class="TrigButton" name="trigButton_6">
+   <property name="geometry">
+    <rect>
+     <x>611</x>
+     <y>358</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="buttonId">
+    <number>1216</number>
+   </property>
+   <property name="iconNormal">
+    <string>../icon/test/Store.png</string>
+   </property>
+  </widget>
+  <widget class="TrigButton" name="trigButton_7">
+   <property name="geometry">
+    <rect>
+     <x>611</x>
+     <y>420</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="buttonId">
+    <number>1218</number>
+   </property>
+   <property name="iconNormal">
+    <string>../icon/test/Print.png</string>
+   </property>
+  </widget>
+  <zorder>tabWidget</zorder>
+  <zorder>trigButton_RotLeft</zorder>
+  <zorder>trigButton_RotRight</zorder>
+  <zorder>trigButton_LargePre</zorder>
+  <zorder>trigButton_smallPre</zorder>
+  <zorder>horSliderBrightness</zorder>
+  <zorder>horSliderContrast</zorder>
+  <zorder>groupBox</zorder>
+  <zorder>trigButton_RotReset</zorder>
+  <zorder>switchButton_flipVer</zorder>
+  <zorder>switchButton_flipHor</zorder>
+  <zorder>tabWidget_Left</zorder>
+  <zorder>trigButton_endExam</zorder>
+  <zorder>trigButton_3</zorder>
+  <zorder>trigButton_5</zorder>
+  <zorder>switchButton_3</zorder>
+  <zorder>trigButton_4</zorder>
+  <zorder>switchButton_4</zorder>
+  <zorder>horSliderContrast_2</zorder>
+  <zorder>trigButton_RotLeft_3</zorder>
+  <zorder>trigButton_RotLeft_4</zorder>
+  <zorder>trigButton_RotLeft_5</zorder>
+  <zorder>trigButton_RotLeft_6</zorder>
+  <zorder>indexButton_Mag_2</zorder>
+  <zorder>trigButton_6</zorder>
+  <zorder>trigButton_7</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GroupBox</class>
+   <extends>QGroupBox</extends>
+   <header>groupbox.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>HorSlider</class>
+   <extends>QWidget</extends>
+   <header>horslider.h</header>
+  </customwidget>
+  <customwidget>
+   <class>IndexButton</class>
+   <extends>QPushButton</extends>
+   <header>indexbutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>RadioButton</class>
+   <extends>QPushButton</extends>
+   <header>radiobutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>StaticLabel</class>
+   <extends>QLabel</extends>
+   <header>staticlabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>SwitchButton</class>
+   <extends>QPushButton</extends>
+   <header>switchbutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>TabWidget</class>
+   <extends>QTabWidget</extends>
+   <header>tabwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>TrigButton</class>
+   <extends>QPushButton</extends>
+   <header>trigbutton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

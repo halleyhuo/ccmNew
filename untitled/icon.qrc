@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/ColHeightIN.png</file>
+        <file>icons/ColHeightOut.png</file>
+        <file>icons/ColWidthIN.png</file>
+        <file>icons/ColWidthOut.png</file>
+        <file>icons/windowicon.png</file>
+        <file>icons/DoseRegulationStop.png</file>
+        <file>icons/RadModeOff.png</file>
+        <file>icons/DoseLevel001.png</file>
+        <file>icons/DoseLevel002.png</file>
+        <file>icons/DoseLevel003.png</file>
+        <file>icons/FluoroModeOff.png</file>
+        <file>icons/FluoroModeOn.png</file>
+        <file>icons/SubModeOff.png</file>
+        <file>icons/SubModeOn.png</file>
+        <file>icons/RoadModeOff.png</file>
+        <file>icons/RoadModeOn.png</file>
+        <file>icons/RadModeOn.png</file>
+        <file>icons/TechLock001.png</file>
+        <file>icons/TechLock002.png</file>
+        <file>icons/Preview.png</file>
+        <file>icons/Contious.png</file>
+        <file>icons/mAOnmAsOff_new.png</file>
+        <file>icons/ExpKV.png</file>
+        <file>icons/mAOffmAsOn.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,1057 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainDialog</class>
+ <widget class="QDialog" name="MainDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>VA13C</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{background:rgb(166,166,199);} </string>
+  </property>
+  <widget class="StaticLabel" name="staticLabel_17">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>20</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>Female</string>
+   </property>
+   <property name="iconId">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="StaticLabel" name="staticLabel_16">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>20</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>05.05.1985</string>
+   </property>
+   <property name="iconId">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="StaticLabel" name="staticLabel_15">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>20</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>10020121</string>
+   </property>
+   <property name="iconId">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="StaticLabel" name="StatusIcon">
+   <property name="geometry">
+    <rect>
+     <x>6</x>
+     <y>7</y>
+     <width>81</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="iconNormal">
+    <string>../icons/rad3/staticlabel/ready.png</string>
+   </property>
+  </widget>
+  <widget class="StaticLabel" name="staticLabel_14">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>20</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgb(255,255,255)</string>
+   </property>
+   <property name="text">
+    <string>David Beckham</string>
+   </property>
+   <property name="iconId">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="TabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>60</y>
+     <width>800</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Exposure</string>
+    </attribute>
+    <widget class="PopButton" name="popButton_mas">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>10</y>
+       <width>60</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>602</number>
+     </property>
+     <property name="iconId">
+      <number>1019</number>
+     </property>
+     <property name="textType">
+      <string>mAs</string>
+     </property>
+     <property name="helpText">
+      <string>mAs setting</string>
+     </property>
+    </widget>
+    <widget class="PopButton" name="popButton_ms">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>10</y>
+       <width>60</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>603</number>
+     </property>
+     <property name="iconId">
+      <number>1020</number>
+     </property>
+     <property name="textType">
+      <string>ms</string>
+     </property>
+     <property name="helpText">
+      <string>ms setting</string>
+     </property>
+    </widget>
+    <widget class="PopButton" name="popButton_kv">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>10</y>
+       <width>60</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>601</number>
+     </property>
+     <property name="textType">
+      <string>kV</string>
+     </property>
+     <property name="helpText">
+      <string>KV setting</string>
+     </property>
+    </widget>
+    <widget class="PopButton" name="popButton_focus">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>190</y>
+       <width>60</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>502</number>
+     </property>
+     <property name="iconId">
+      <number>1202</number>
+     </property>
+     <property name="iconMode">
+      <bool>true</bool>
+     </property>
+     <property name="textType">
+      <string/>
+     </property>
+     <property name="firstIconName" stdset="0">
+      <string>../icon/focus001.png</string>
+     </property>
+     <property name="itemsNumber" stdset="0">
+      <number>3</number>
+     </property>
+     <property name="helpText">
+      <string>focus select</string>
+     </property>
+    </widget>
+    <widget class="PopButton" name="popButton_Dose">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>100</y>
+       <width>60</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>609</number>
+     </property>
+     <property name="textType">
+      <string>Dose</string>
+     </property>
+     <property name="helpText">
+      <string>Dose</string>
+     </property>
+    </widget>
+    <widget class="PopButton" name="popButton_filter">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>190</y>
+       <width>60</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>608</number>
+     </property>
+     <property name="textType">
+      <string>mm Cu</string>
+     </property>
+     <property name="helpText">
+      <string>filter select</string>
+     </property>
+    </widget>
+    <widget class="PopButton" name="popButton_AEC">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>100</y>
+       <width>60</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>553</number>
+     </property>
+     <property name="iconId">
+      <number>1207</number>
+     </property>
+     <property name="iconMode">
+      <bool>true</bool>
+     </property>
+     <property name="textType">
+      <string>AEC</string>
+     </property>
+     <property name="firstIconName" stdset="0">
+      <string>../icon/AECfields/BM001.png</string>
+     </property>
+     <property name="itemsNumber" stdset="0">
+      <number>8</number>
+     </property>
+     <property name="helpText">
+      <string>AEC field select</string>
+     </property>
+    </widget>
+    <widget class="PopButton" name="popButton_sense">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>100</y>
+       <width>60</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>610</number>
+     </property>
+     <property name="textType">
+      <string>Correct</string>
+     </property>
+     <property name="helpText">
+      <string>Correction</string>
+     </property>
+    </widget>
+    <widget class="TrigButton" name="trigButton_home">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>190</y>
+       <width>60</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent</string>
+     </property>
+     <property name="buttonId">
+      <number>104</number>
+     </property>
+     <property name="iconNormal">
+      <string>../icon/home.png</string>
+     </property>
+     <property name="iconHover">
+      <string/>
+     </property>
+     <property name="iconPress">
+      <string/>
+     </property>
+     <property name="helpText">
+      <string>for demo, switch to syngo style UI</string>
+     </property>
+    </widget>
+    <widget class="SwitchButton" name="switchButton_7">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>10</y>
+       <width>60</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>900</number>
+     </property>
+     <property name="iconOn">
+      <string>../icon/StaticLabel/FigureType.png</string>
+     </property>
+     <property name="iconOff">
+      <string>../icon/StaticLabel/FigureType.png</string>
+     </property>
+     <property name="helpText">
+      <string>Figure type</string>
+     </property>
+    </widget>
+    <widget class="SwitchButton" name="switchButton_collimatorBlock">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>190</y>
+       <width>60</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>208</number>
+     </property>
+     <property name="iconOn">
+      <string>../icon/collimationLockOn.png</string>
+     </property>
+     <property name="iconOff">
+      <string>../icon/collimationLockOff.png</string>
+     </property>
+     <property name="helpText">
+      <string>Collimator lock button</string>
+     </property>
+    </widget>
+    <widget class="SwitchButton" name="switchButton_movementBlock">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>190</y>
+       <width>60</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>237</number>
+     </property>
+     <property name="iconOn">
+      <string>../icon/movementblock_on.png</string>
+     </property>
+     <property name="iconOff">
+      <string>../icon/movementblock_off.png</string>
+     </property>
+     <property name="helpText">
+      <string>movement lock button</string>
+     </property>
+    </widget>
+    <widget class="ComboBox" name="comboBox_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>331</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>607</number>
+     </property>
+     <property name="helpText">
+      <string>OGP Select</string>
+     </property>
+    </widget>
+    <widget class="PopButton" name="popButton_HUD">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>100</y>
+       <width>60</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>614</number>
+     </property>
+     <property name="textType">
+      <string>HUD</string>
+     </property>
+     <property name="helpText">
+      <string>HUD</string>
+     </property>
+    </widget>
+    <widget class="SwitchButton" name="switchButton_topAlign">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>190</y>
+       <width>60</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>216</number>
+     </property>
+     <property name="iconOn">
+      <string>../icon/StaticLabel/TopAlign.png</string>
+     </property>
+     <property name="iconOff">
+      <string>../icon/StaticLabel/TopAlign.png</string>
+     </property>
+     <property name="helpText">
+      <string>top align enable button</string>
+     </property>
+    </widget>
+    <widget class="PopButton" name="popButton_workspace">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>100</y>
+       <width>60</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>553</number>
+     </property>
+     <property name="iconId">
+      <number>1207</number>
+     </property>
+     <property name="iconMode">
+      <bool>true</bool>
+     </property>
+     <property name="textType">
+      <string>AEC</string>
+     </property>
+     <property name="firstIconName" stdset="0">
+      <string>../icons/rad3/series/workspace001.png</string>
+     </property>
+     <property name="itemsNumber" stdset="0">
+      <number>6</number>
+     </property>
+     <property name="helpText">
+      <string>workspace select</string>
+     </property>
+    </widget>
+    <widget class="SwitchButton" name="switchButton_SIDTracking">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>100</y>
+       <width>60</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>251</number>
+     </property>
+     <property name="iconOn">
+      <string>../icons/rad3/button/SIDTrackingOn.png</string>
+     </property>
+     <property name="iconOff">
+      <string>../icons/rad3/button/SIDTrackingOff.png</string>
+     </property>
+     <property name="helpText">
+      <string>Collimator lock button</string>
+     </property>
+    </widget>
+    <widget class="SwitchButton" name="switchButton_SIDTracking_2">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>100</y>
+       <width>60</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>252</number>
+     </property>
+     <property name="iconOn">
+      <string>../icons/rad3/button/trackingOn.png</string>
+     </property>
+     <property name="iconOff">
+      <string>../icons/rad3/button/trackingOff.png</string>
+     </property>
+     <property name="helpText">
+      <string>Collimator lock button</string>
+     </property>
+    </widget>
+    <widget class="PopButton" name="popButton_AEC_2">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>100</y>
+       <width>60</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>554</number>
+     </property>
+     <property name="iconId">
+      <number>1207</number>
+     </property>
+     <property name="iconMode">
+      <bool>true</bool>
+     </property>
+     <property name="textType">
+      <string>AEC</string>
+     </property>
+     <property name="firstIconName" stdset="0">
+      <string>../icon/AECfields/BM001.png</string>
+     </property>
+     <property name="itemsNumber" stdset="0">
+      <number>8</number>
+     </property>
+     <property name="helpText">
+      <string>AEC field select</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Device Position</string>
+    </attribute>
+    <widget class="TrigButton" name="trigButton_rot">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>100</y>
+       <width>60</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>12</number>
+     </property>
+     <property name="iconNormal">
+      <string>../icon/test/RotateLeft.png</string>
+     </property>
+     <property name="iconHover">
+      <string/>
+     </property>
+     <property name="iconPress">
+      <string/>
+     </property>
+     <property name="helpText">
+      <string>top alignment</string>
+     </property>
+    </widget>
+    <widget class="TrigButton" name="trigButton_next">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>100</y>
+       <width>60</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="buttonId">
+      <number>11</number>
+     </property>
+     <property name="iconNormal">
+      <string>../icon/test/Exit.png</string>
+     </property>
+     <property name="iconHover">
+      <string/>
+     </property>
+     <property name="iconPress">
+      <string/>
+     </property>
+     <property name="helpText">
+      <string>top alignment</string>
+     </property>
+    </widget>
+    <widget class="StaticLabel" name="staticLabel">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>30</y>
+       <width>391</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>These buttons are only for testing!</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="SwitchButton" name="switchButton_8">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>50</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="buttonId">
+    <number>0</number>
+   </property>
+   <property name="iconOn">
+    <string>../icon/help_on.png</string>
+   </property>
+   <property name="iconOff">
+    <string>../icon/help_off.png</string>
+   </property>
+  </widget>
+  <widget class="GroupBox" name="groupBox_CollimatorStatus">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>470</y>
+     <width>800</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">*{background:rgb(255,255,255);}</string>
+   </property>
+   <widget class="StaticLabel" name="staticLabel_21">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="iconId">
+     <number>0</number>
+    </property>
+    <property name="iconNormal">
+     <string>../icons/rad3/staticLabel/collimationWidth.png</string>
+    </property>
+   </widget>
+   <widget class="StaticLabel" name="staticLabel_22">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>0</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="iconId">
+     <number>0</number>
+    </property>
+    <property name="iconNormal">
+     <string>../icons/rad3/staticLabel/collimationHeight.png</string>
+    </property>
+   </widget>
+   <widget class="StaticLabel" name="staticLabel_ColWidth">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>0</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>cm</string>
+    </property>
+    <property name="iconId">
+     <number>1106</number>
+    </property>
+   </widget>
+   <widget class="StaticLabel" name="staticLabel_ColHeight">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>0</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>cm</string>
+    </property>
+    <property name="iconId">
+     <number>1114</number>
+    </property>
+   </widget>
+   <widget class="StaticLabel" name="staticLabel_13">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>0</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Manual</string>
+    </property>
+    <property name="iconId">
+     <number>1016</number>
+    </property>
+   </widget>
+  </widget>
+  <widget class="StatusBar" name="statusBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>380</y>
+     <width>800</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="iconReady">
+    <string>../icon/subIcon/ready.png</string>
+   </property>
+   <property name="iconMsg">
+    <string>../icon/subIcon/not_ready.png</string>
+   </property>
+  </widget>
+  <widget class="MsgBox" name="msgBox">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>380</y>
+     <width>800</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="Id">
+    <number>101</number>
+   </property>
+   <property name="iconErr">
+    <string>../icon/subIcon/error.png</string>
+   </property>
+   <property name="iconInf">
+    <string>../icon/subIcon/information.png</string>
+   </property>
+  </widget>
+  <widget class="GroupBox" name="groupBox_systemStatus">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>440</y>
+     <width>800</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">*{background:rgb(0,0,0);}</string>
+   </property>
+   <widget class="StaticLabel" name="staticLabel_18">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>2</y>
+      <width>40</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(255, 255, 255)</string>
+    </property>
+    <property name="text">
+     <string>RHA:</string>
+    </property>
+    <property name="iconId">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="StaticLabel" name="staticLabel_19">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>2</y>
+      <width>40</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(255, 255, 255)</string>
+    </property>
+    <property name="text">
+     <string>Tilt:</string>
+    </property>
+    <property name="iconId">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="StaticLabel" name="staticLabel_6">
+    <property name="geometry">
+     <rect>
+      <x>36</x>
+      <y>2</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(255, 255, 255)</string>
+    </property>
+    <property name="text">
+     <string>115cm</string>
+    </property>
+    <property name="iconId">
+     <number>1112</number>
+    </property>
+   </widget>
+   <widget class="StaticLabel" name="staticLabel_9">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>2</y>
+      <width>31</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(255, 255, 255)</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="iconId">
+     <number>1120</number>
+    </property>
+   </widget>
+   <widget class="StaticLabel" name="staticLabel_7">
+    <property name="geometry">
+     <rect>
+      <x>226</x>
+      <y>2</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconId">
+     <number>1210</number>
+    </property>
+    <property name="iconNormal">
+     <string>../icons/rad3/series/beamCenteringOn.png</string>
+    </property>
+    <property name="helpText">
+     <string>auto tracking state</string>
+    </property>
+   </widget>
+   <widget class="StaticLabel" name="staticLabel_4">
+    <property name="geometry">
+     <rect>
+      <x>156</x>
+      <y>2</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconNormal">
+     <string>../icons/rad3/series/trackingUnknown.png</string>
+    </property>
+    <property name="helpText">
+     <string>auto tracking state</string>
+    </property>
+   </widget>
+   <widget class="StaticLabel" name="AXCS_DISP_GRID_2">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>2</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="iconId">
+     <number>0</number>
+    </property>
+    <property name="iconNormal">
+     <string>../icons/rad3/staticlabel/SID.png</string>
+    </property>
+   </widget>
+   <widget class="StaticLabel" name="AXCS_DISP_GRID">
+    <property name="geometry">
+     <rect>
+      <x>106</x>
+      <y>2</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="iconId">
+     <number>1204</number>
+    </property>
+    <property name="iconNormal">
+     <string>../icons/rad3/series/dispGrid001.png</string>
+    </property>
+   </widget>
+   <widget class="StaticLabel" name="staticLabel_12">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>2</y>
+      <width>40</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(255, 255, 255)</string>
+    </property>
+    <property name="text">
+     <string>RVA:</string>
+    </property>
+    <property name="iconId">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="StaticLabel" name="staticLabel_8">
+    <property name="geometry">
+     <rect>
+      <x>562</x>
+      <y>2</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(255, 255, 255)</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="iconId">
+     <number>1121</number>
+    </property>
+   </widget>
+   <widget class="StaticLabel" name="staticLabel_10">
+    <property name="geometry">
+     <rect>
+      <x>766</x>
+      <y>2</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(255, 255, 255)</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="iconId">
+     <number>1101</number>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ComboBox</class>
+   <extends>QComboBox</extends>
+   <header>combobox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>GroupBox</class>
+   <extends>QGroupBox</extends>
+   <header>groupbox.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MsgBox</class>
+   <extends>QWidget</extends>
+   <header>msgbox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>PopButton</class>
+   <extends>QPushButton</extends>
+   <header>popbutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>StaticLabel</class>
+   <extends>QLabel</extends>
+   <header>staticlabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>StatusBar</class>
+   <extends>QWidget</extends>
+   <header>statusbar.h</header>
+  </customwidget>
+  <customwidget>
+   <class>SwitchButton</class>
+   <extends>QPushButton</extends>
+   <header>switchbutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>TabWidget</class>
+   <extends>QTabWidget</extends>
+   <header>tabwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>TrigButton</class>
+   <extends>QPushButton</extends>
+   <header>trigbutton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
