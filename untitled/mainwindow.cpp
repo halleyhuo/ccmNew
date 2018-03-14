@@ -1,7 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "Client/xtpClient.h"
 #include "HmiXtp.h"
+#include "IDCXTP/Client/inc/xtpClient.h"
 #include <QFile>
 #include<QMessageBox>
 MainWindow::MainWindow(QWidget *parent) :
@@ -50,7 +50,7 @@ void MainWindow::FluoroModeOn()
 	SUiCmdFrame.data.type		= PUSH_BUTTON;
 	SUiCmdFrame.data.param		= UICMD_PARAM_PLS;
 
-	CHmiXtpIf::Sigleton()->xtpClientIf->XtpSend(&SUiCmdFrame.header);	
+    CHmiXtpIf::Sigleton()->xtpClientIf->XtpSend(&SUiCmdFrame.header);
 
 }
 

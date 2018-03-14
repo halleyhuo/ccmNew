@@ -4,13 +4,13 @@
 #include <QThread>
 #include <QObject>
 
-#include "IDCBaseLib/IDCThread.h"
-#include "IDCBaseLib/IDCSema.h"
-#include "IDCBaseLib/IDCAlarm.h"
-#include "xtp/inc/xtpcomm.h"
-#include "xtp/client/xtpClient.h"
+#include "IDCBase/inc/IDCThread.h"
+#include "IDCBase/inc/IDCSema.h"
+#include "IDCBase/inc/IDCAlarm.h"
+#include "IDCXTP/inc/xtpcomm.h"
+#include "IDCXTP/Client/inc/xtpClient.h"
 
-#include "LogTrace.h"
+#include "IDCLog/inc/LogTrace.h"
 class recvThread : public QThread
 {
 public:

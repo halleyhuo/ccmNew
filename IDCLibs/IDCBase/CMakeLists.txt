@@ -5,7 +5,8 @@ include( ../../IDCCommon.cmake )
 include_directories(./inc ../../inc ../IDCLog/inc)
 
 
-set(src_list src/IDCThread.cpp
+set(src_list 
+src/IDCThread.cpp
 src/IDCMsgQueue.cpp
 src/IDCSema.cpp
 src/IDCAlarm.cpp )

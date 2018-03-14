@@ -35,58 +35,31 @@ FORMS    += mainwindow.ui \
 RESOURCES += \
     icon.qrc
 
-DISTFILES +=
+INCLUDEPATH += $$PWD/../inc
 
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../XTP/release/ -lXTPClientIf
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../XTP/debug/ -lXTPClientIf
-else:unix: LIBS += -L$$PWD/../XTP/ -lXTPClientIf
 
-INCLUDEPATH += $$PWD/../XTP
-DEPENDPATH += $$PWD/../XTP
+INCLUDEPATH += $$PWD/../IDCLibs
+DEPENDPATH += $$PWD/../IDCLibs
 
-INCLUDEPATH += $$PWD/..
 
-win32-g++:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/../XTP/release/libXTPClientIf.a
-else:win32-g++:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/../XTP/debug/libXTPClientIf.a
-else:win32:!win32-g++:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/../XTP/release/XTPClientIf.lib
-else:win32:!win32-g++:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/../XTP/debug/XTPClientIf.lib
-else:unix: PRE_TARGETDEPS += $$PWD/../XTP/libXTPClientIf.a
+################### IDCXTP Lib #####################
+unix:!macx: LIBS += -L$$PWD/../IDCLibs/IDCXTP/build/ -lXTPClientIf
 
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../IDCBaseLib/release/ -lIDCBaseLib
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../IDCBaseLib/debug/ -lIDCBaseLib
-else:unix: LIBS += -L$$PWD/../IDCBaseLib/ -lIDCBaseLib
 
-INCLUDEPATH += $$PWD/../IDCBaseLib
-DEPENDPATH += $$PWD/../IDCBaseLib
+unix:!macx: PRE_TARGETDEPS += $$PWD/../IDCLibs/IDCXTP/build/libXTPClientIf.a
 
-win32-g++:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/../IDCBaseLib/release/libIDCBaseLib.a
-else:win32-g++:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/../IDCBaseLib/debug/libIDCBaseLib.a
-else:win32:!win32-g++:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/../IDCBaseLib/release/IDCBaseLib.lib
-else:win32:!win32-g++:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/../IDCBaseLib/debug/IDCBaseLib.lib
-else:unix: PRE_TARGETDEPS += $$PWD/../IDCBaseLib/libIDCBaseLib.a
+################### IDCBase Lib #####################
 
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../IDCBaseLib/release/ -lIDCBaseLib
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../IDCBaseLib/debug/ -lIDCBaseLib
-else:unix: LIBS += -L$$PWD/../IDCBaseLib/ -lIDCBaseLib
+unix:!macx: LIBS += -L$$PWD/../IDCLibs/IDCBase/build/ -lIDCBase
 
-INCLUDEPATH += $$PWD/../IDCBaseLib
-DEPENDPATH += $$PWD/../IDCBaseLib
+unix:!macx: PRE_TARGETDEPS += $$PWD/../IDCLibs/IDCBase/build/libIDCBase.a
 
-win32-g++:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/../IDCBaseLib/release/libIDCBaseLib.a
-else:win32-g++:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/../IDCBaseLib/debug/libIDCBaseLib.a
-else:win32:!win32-g++:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/../IDCBaseLib/release/IDCBaseLib.lib
-else:win32:!win32-g++:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/../IDCBaseLib/debug/IDCBaseLib.lib
-else:unix: PRE_TARGETDEPS += $$PWD/../IDCBaseLib/libIDCBaseLib.a
+################### IDCLog Lib #####################
+unix:!macx: LIBS += -L$$PWD/../IDCLibs/IDCLog/build/ -lIDCLog
 
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../IDCLog/release/ -lIDCLog
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../IDCLog/debug/ -lIDCLog
-else:unix: LIBS += -L$$PWD/../IDCLog/ -lIDCLog
+unix:!macx: PRE_TARGETDEPS += $$PWD/../IDCLibs/IDCLog/build/libIDCLog.a
 
-INCLUDEPATH += $$PWD/../IDCLog
-DEPENDPATH += $$PWD/../IDCLog
 
-win32-g++:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/../IDCLog/release/libIDCLog.a
-else:win32-g++:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/../IDCLog/debug/libIDCLog.a
-else:win32:!win32-g++:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/../IDCLog/release/IDCLog.lib
-else:win32:!win32-g++:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/../IDCLog/debug/IDCLog.lib
-else:unix: PRE_TARGETDEPS += $$PWD/../IDCLog/libIDCLog.a
+unix:!macx: LIBS += -lrt
+
+unix:!macx: LIBS += -lpthread
